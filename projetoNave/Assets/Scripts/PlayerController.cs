@@ -10,6 +10,9 @@ public class PlayerController : MonoBehaviour {
 	void Start ()
 	{
 		rb = GetComponent<Rigidbody>();
+		gameObject.tag = "CubeA";
+
+
 	}
 	
 	void FixedUpdate ()
@@ -30,5 +33,6 @@ public class PlayerController : MonoBehaviour {
 			//Destroy(other.gameObject);
 			Debug.Log("Objeto colidiu");
 		}
+
 	}
 }

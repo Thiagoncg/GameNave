@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class RotateCube : MonoBehaviour {
-	public float velocidade_x;
+	public float velocidade_y;
 
 	// Use this for initialization
 	void Start () {
@@ -11,8 +11,7 @@ public class RotateCube : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-//		Transform.Rotate (new Vector3 (10, 40, 50) * Time.deltaTime);
-		transform.Rotate (new Vector3 (velocidade_x, 50, 30) * Time.deltaTime);
+		transform.Rotate (new Vector3 (0, velocidade_y, 0) * Time.deltaTime);
 	
 	}
 }

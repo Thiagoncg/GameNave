@@ -1,8 +1,8 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="..\..\..\Testes\Assets\Scripsts\RotateCube.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PlayerController.cs">
     <Files>
-      <File FileName="..\..\..\Testes\Assets\Scripsts\RotateCube.cs" Line="14" Column="47" />
+      <File FileName="Assets\Scripts\PlayerController.cs" Line="37" Column="93" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

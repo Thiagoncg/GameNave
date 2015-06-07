@@ -46,10 +46,10 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\ApontaLetra.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\GeraLetras.cs" />
      <Compile Include="Assets\Scripts\LoadLevel.cs" />
-     <Compile Include="Assets\Scripts\MudaTag.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\RotateCube.cs" />
  <Reference Include="UnityEngine.UI">

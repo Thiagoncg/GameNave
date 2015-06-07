@@ -1,4 +1,7 @@
 ﻿//Autor Thiago Nicola Cajuela Garcia
+/*Script que gera as letras de A a Z para adcionar nos cubos de forma randomica
+criando assim apenas um Prefab cubo, que ira receber delegate forma randomica as texturas de 
+letras*/
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
@@ -41,7 +44,6 @@ public class GeraLetras : MonoBehaviour {
 
 	public string letra = "";
 	//Text text;
-
 
 	// Use this for initialization
 	public void Start () {

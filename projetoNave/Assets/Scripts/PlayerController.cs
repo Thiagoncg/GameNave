@@ -1,4 +1,8 @@
-﻿using UnityEngine;
+﻿//Autor; Thiago Nicola Cajuela Garcia
+/*
+ * script que controla o controle, coleta os cubos e identifica qual foi o cubo coletado e joga o valor no gui text
+ */
+using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 
@@ -6,16 +10,20 @@ public class PlayerController : MonoBehaviour {
 	
 	public float speed;//Variavel determina velocidade doo Player	
 	public Text contText;
-
+	public AudioSource audio;
+	
 	private Rigidbody rb;
 	private int cont; //Contador,conta quantidade de cubos capturados
+
+
 
 	
 	void Start ()
 	{
 		rb = GetComponent<Rigidbody>();
-		//gameObject.tag = "CubeA";
+		audio = GetComponent<AudioSource>();
 		cont = 0;
+
 	}
 
 
@@ -44,164 +52,190 @@ public class PlayerController : MonoBehaviour {
 
 		if (other.gameObject.CompareTag("Vazio")){
 			other.gameObject.SetActive(false);
-			contText.text = "Vazio";
+			contText.text = contText.text + "Vazio";
 			cont ++;
+			audio.Play();
 			Debug.Log (cont);
 		}
 		if (other.gameObject.CompareTag("CubeA")){
 			other.gameObject.SetActive(false);
-			contText.text = "A";
+			contText.text = contText.text + "A";
 			cont ++;
 			Debug.Log (cont);
 		}
 		if (other.gameObject.CompareTag("CubeB")){
 			other.gameObject.SetActive(false);
-			contText.text = "B";
+			contText.text = contText.text + "B";
 			cont ++;
+			audio.Play();
 			Debug.Log (cont);
 		}
 		if (other.gameObject.CompareTag("CubeC")){
 			other.gameObject.SetActive(false);
-			contText.text = "C";
+			contText.text = contText.text + "C";
 			cont ++;
+			audio.Play();
 			Debug.Log (cont);
 		}
 		if (other.gameObject.CompareTag("CubeD")){
 			other.gameObject.SetActive(false);
-			contText.text = "D";
+			contText.text = contText.text + "D";
 			cont ++;
+			audio.Play();
 			Debug.Log (cont);
 		}
 		if (other.gameObject.CompareTag("CubeE")){
 			other.gameObject.SetActive(false);
-			contText.text = "E";
+			contText.text = contText.text + "E";
 			cont ++;
+			audio.Play();
 			Debug.Log (cont);
 		}
 		if (other.gameObject.CompareTag("CubeF")){
 			other.gameObject.SetActive(false);
-			contText.text = "F";
+			contText.text = contText.text + "F";
 			cont ++;
+			audio.Play();
 			Debug.Log (cont);
 		}
 		if (other.gameObject.CompareTag("CubeG")){
 			other.gameObject.SetActive(false);
-			contText.text = "G";
+			contText.text = contText.text + "G";
 			cont ++;
+			audio.Play();
 			Debug.Log (cont);
 		}
 		if (other.gameObject.CompareTag("CubeH")){
 			other.gameObject.SetActive(false);
-			contText.text = "H";
+			contText.text = contText.text + "H";
 			cont ++;
+			audio.Play();
 			Debug.Log (cont);
 		}
 		if (other.gameObject.CompareTag("CubeI")){
 			other.gameObject.SetActive(false);
-			contText.text = "I";
+			contText.text = contText.text + "I";
 			cont ++;
+			audio.Play();
 			Debug.Log (cont);
 		}
 		if (other.gameObject.CompareTag("CubeJ")){
 			other.gameObject.SetActive(false);
-			contText.text = "J";
+			contText.text = contText.text + "J";
 			cont ++;
+			audio.Play();
 			Debug.Log (cont);
 		}
 		if (other.gameObject.CompareTag("CubeK")){
 			other.gameObject.SetActive(false);
-			contText.text = "K";
+			contText.text = contText.text + "K";
 			cont ++;
+			audio.Play();
 			Debug.Log (cont);
 		}
 		if (other.gameObject.CompareTag("CubeL")){
 			other.gameObject.SetActive(false);
-			contText.text = "L";
+			contText.text = contText.text + "L";
 			cont ++;
+			audio.Play();
 			Debug.Log (cont);
 		}
 		if (other.gameObject.CompareTag("CubeM")){
 			other.gameObject.SetActive(false);
-			contText.text = "M";
+			contText.text = contText.text + "M";
 			cont ++;
+			audio.Play();
 			Debug.Log (cont);
 		}
 		if (other.gameObject.CompareTag("CubeN")){
 			other.gameObject.SetActive(false);
-			contText.text = "N";
+			contText.text = contText.text + "N";
 			cont ++;
+			audio.Play();
 			Debug.Log (cont);
 		}
 		if (other.gameObject.CompareTag("CubeO")){
 			other.gameObject.SetActive(false);
-			contText.text = "O";
+			contText.text = contText.text + "O";
 			cont ++;
+			audio.Play();
 			Debug.Log (cont);
 		}
 		if (other.gameObject.CompareTag("CubeP")){
 			other.gameObject.SetActive(false);
-			contText.text = "P";
+			contText.text = contText.text + "P";
 			cont ++;
+			audio.Play();
 			Debug.Log (cont);
 		}
 		if (other.gameObject.CompareTag("CubeQ")){
 			other.gameObject.SetActive(false);
-			contText.text = "Q";
+			contText.text = contText.text + "Q";
 			cont ++;
+			audio.Play();
 			Debug.Log (cont);
 		}
 		if (other.gameObject.CompareTag("CubeR")){
 			other.gameObject.SetActive(false);
-			contText.text = "R";
+			contText.text = contText.text + "R";
 			cont ++;
+			audio.Play();
 			Debug.Log (cont);
 		}
 		if (other.gameObject.CompareTag("CubeS")){
 			other.gameObject.SetActive(false);
-			contText.text = "S";
+			contText.text = contText.text + "S";
 			cont ++;
+			audio.Play();
 			Debug.Log (cont);
 		}
 		if (other.gameObject.CompareTag("CubeT")){
 			other.gameObject.SetActive(false);
-			contText.text = "T";
+			contText.text = contText.text + "T";
 			cont ++;
+			audio.Play();
 			Debug.Log (cont);
 		}
 		if (other.gameObject.CompareTag("CubeU")){
 			other.gameObject.SetActive(false);
-			contText.text = "U";
+			contText.text = contText.text + "U";
 			cont ++;
+
 			Debug.Log (cont);
 		}
 		if (other.gameObject.CompareTag("CubeV")){
 			other.gameObject.SetActive(false);
-			contText.text = "V";
+			contText.text = contText.text + "V";
 			cont ++;
+			audio.Play();
 			Debug.Log (cont);
 		}
 		if (other.gameObject.CompareTag("CubeW")){
 			other.gameObject.SetActive(false);
-			contText.text = "W";
+			contText.text = contText.text + "W";
 			cont ++;
+			audio.Play();
 			Debug.Log (cont);
 		}
 		if (other.gameObject.CompareTag("CubeX")){
 			other.gameObject.SetActive(false);
-			contText.text = "X";
+			contText.text = contText.text + "X";
 			cont ++;
+			audio.Play();
 			Debug.Log (cont);
 		}
 		if (other.gameObject.CompareTag("CubeY")){
 			other.gameObject.SetActive(false);
-			contText.text = "Y";
+			contText.text = contText.text + "Y";
 			cont ++;
+			audio.Play();
 			Debug.Log (cont);
 		}
 		if (other.gameObject.CompareTag("CubeZ")){
 			other.gameObject.SetActive(false);
-			contText.text = "Z";
+			contText.text = contText.text + "Z";
 			cont ++;
+			audio.Play();
 			Debug.Log (cont);
 		}
 
@@ -210,7 +244,7 @@ public class PlayerController : MonoBehaviour {
 
 		}
 
-//		switch (gameObject.CompareTag) {
+//		switch (gameObject.tag) {
 //			case "CubeA":
 //				cont ++;
 //				other.gameObject.SetActive(false);

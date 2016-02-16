@@ -1,5 +1,6 @@
 ﻿//Autor: Thiago Nicola Cajuela Garcia
 /*
+vhfcgnhmfjkmfhm
 Script que mante a camera em seu lugar restringindo os movimentos para que nao rode com a esfera
  */
 using UnityEngine;
